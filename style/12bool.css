@@ -6,16 +6,30 @@
     box-sizing: border-box;
 }
 
+/* container */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 /* row */
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
 }
 
 /* col */
+
+.row > [class^=col]{
+    max-width: 100%;
+    flex-basis: 100%;
+    height: auto;
+}
 
 .row > .col-1 {
     flex-basis: calc(100% / 12);

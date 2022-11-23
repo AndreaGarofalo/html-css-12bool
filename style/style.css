@@ -1,0 +1,13 @@
+.row [class^=col] {
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    background-color: #006cfa;
+    padding: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+
+[class^=col] > [class^=col] {
+    background-color: #00e165;
+}
